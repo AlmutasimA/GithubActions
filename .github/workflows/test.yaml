@@ -25,6 +25,9 @@ jobs:
         needs: test
         runs-on: ubuntu-latest
         steps:
+            - name: install lint
+              run: npm install eslint
+            
             - name: Lint
               run: npm run lint
               
